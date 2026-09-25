@@ -1,0 +1,23 @@
+{
+  "name": "web-verifier",
+  "version": "1.0.0",
+  "description": "Verification functions for checking whether a browser agent landed on the correct page",
+  "main": "verifiers/task1_url.js",
+  "scripts": {
+    "test:task1": "node verifiers/task1_url.js",
+    "test:task2": "node verifiers/task2_dom.js",
+    "test:task3": "node verifiers/task3_snapshot.js",
+    "test": "npm run test:task1 && npm run test:task3"
+  },
+  "keywords": [
+    "verifier",
+    "browser-agent",
+    "evaluation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "playwright": "^1.57.0"
+  }
+}
